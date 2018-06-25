@@ -4,11 +4,31 @@
   </head>
   <body>
     <div>
-      <h1><a href="/">Sawaura's Blog</a></h1>
+      <h1><a href="/">さわうらの競プロ記録</a></h1>
     </div>
 
-    <p>Hi there!<br>
-    Welcome to the Sawaura's blog!</p>
+    <div>
+      <h2><a href="http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1175">AOJ1175 そして、いくつになった？</a></h2>
+      <hr>
+      <h3>問題</h3>
+      <p>様々な色、大きさの円盤がある。<br>
+        上にほかの円盤が重なっていない、同じ色の円盤のペアを取り除くことができる。
+        好きな順で取り除けるとき、最大何枚の円盤を取り除くことができるか？
+      </p>
+      <h3>制約</h3>
+      <p>円盤は各色6枚、最大4色<br>
+        テストケースは複数個、制限時間10秒
+      </p>
+      <h3>解法</h3>
+      <p>むむっとBitDPをする。<br>
+        DP[取った円盤の集合]=取り除いた枚数 とするといい感じにできて、計算量O(2^n×n^2)になる。<br>
+        すべての円盤について、上に重なっている円盤の集合を前計算しておくと大変便利。
+      </p>
+      <h3>解答コード</h3>
+      <p>
+        <a href="http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=2962000">これ</a>（コードの開示設定したかわからない）
+      </p>
 
+    </div>
   </body>
 </html>
